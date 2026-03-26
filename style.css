@@ -107,3 +107,57 @@ footer {
         cursor: pointer;
     }
 }
+/* VIDEO BACKGROUND */
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* HERO FIX */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+/* GOLD GLOW BUTTON */
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, gold, #ffcc00);
+    border-radius: 30px;
+    color: black;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(255,215,0,0.5);
+}
+
+.btn:hover {
+    box-shadow: 0 0 30px gold;
+    transform: scale(1.1);
+}
+
+/* GLASS CARDS */
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(255,215,0,0.4);
+}
+
+/* GRID IMPROVED */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
